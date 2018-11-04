@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Homepage</h2>
+  <p>Welcome to My Site, {% if user.is_authenticated %}{{ user.username }}{% else %}visitor{% endif %}!</p>
+  <p>
+    <strong>Total users registered: </strong> {{ count }}
+  </p>
+{% endblock %}

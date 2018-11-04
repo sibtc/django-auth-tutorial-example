@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+  <h1>My Site</h1>
+  <a href="{% url 'home' %}">Home</a> /
+  {% if user.is_authenticated %}
+    <a href="{% url 'secret' %}">Secret page</a> /
+    <a href="{% url 'secret2' %}">Secret page (class-based view)</a> /
+    <a href="{% url 'password_change' %}">Change password</a> /
+    <a href="{% url 'logout' %}">Log out</a> /
+    <strong>You are logged in as {{ user.username }}</strong>
+  {% else %}
+    <a href="{% url 'signup' %}">Sign up</a> /
+    <a href="{% url 'login' %}">Log in</a>
+  {% endif %}
+  <hr>
+  {% block content %}
+  {% endblock %}
+</body>
+</html>
