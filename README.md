@@ -34,4 +34,4 @@ The project will be available at **127.0.0.1:8000**.
 
 ## License
 
-The source code is released under the [MIT License](https://github.com/sibtc/dependent-dropdown-example/blob/master/LICENSE).
+The source code is released under the [MIT License](https://github.com/sibtc/django-auth-tutorial-example/blob/master/LICENSE).
