@@ -5,7 +5,7 @@
 
 Code example used in the tutorial series on Django Authentication.
 
-Watch it on YouTube: [Django 2.1 Authentication Tutorial (7 Videos)](https://www.youtube.com/watch?v=60GTvKCuam8&list=PLLxk3TkuAYnryu1lEcFaBr358IynT7l7H)
+Watch it on YouTube: [Django 2.1 Authentication Tutorial (8 Videos)](https://www.youtube.com/watch?v=60GTvKCuam8&list=PLLxk3TkuAYnryu1lEcFaBr358IynT7l7H)
 
 Subscribe to my YouTube channel: [youtube.com/VitorFreitas](https://www.youtube.com/VitorFreitas?sub_confirmation=1)
 
@@ -20,7 +20,7 @@ git clone https://github.com/sibtc/django-auth-tutorial-example.git
 Install the requirements:
 
 ```bash
-pip install Django==2.1
+pip install -r requirements.txt
 ```
 
 Apply the migrations:
