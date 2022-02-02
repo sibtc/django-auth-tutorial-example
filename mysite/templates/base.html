@@ -50,7 +50,9 @@
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="{% url 'password_change' %}">Change password</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="{% url 'logout' %}">Log out</a>
+                <!-- <a class="dropdown-item" href="{% url 'logout' %}">Log out</a> -->
+                <a class="dropdown-item" href="{% url 'logout' %}?next={{ request.path | urlencode }}">Logout</a>
+
               </div>
             </li>
           </ul>
