@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'crispy_forms',
 
     'mysite.core',
+    'searchapp',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'

@@ -32,6 +32,9 @@
           <li class="nav-item">
             <a class="nav-link" href="{% url 'home' %}">Home</a>
           </li>
+          <li class="navbar-nav mr-auto">
+            <a class="nav-link" href="{% url 'book_list' %}">Books List</a>
+          </li>
           {% if user.is_authenticated %}
             <li class="nav-item">
               <a class="nav-link" href="{% url 'secret' %}">Secret Page</a>

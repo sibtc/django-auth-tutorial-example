@@ -1,0 +1,65 @@
+<html>
+
+<head>
+
+    <title>Book List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div>
+
+    <br/>
+
+    <form action="{% url 'search' %}" class="form-inline" method="get">
+
+       <div class="form-group mb-8">
+            <a href="/">Home</a>
+            <h1>{% if type %}{{ type.name }}{% else %} List of Books {% endif %}</h1>
+
+       </div>
+
+       <div class="form-group mx-sm-3 mb-2">
+
+        <label for="" class="sr-only">search</label>
+
+        <input name="search" type="" class="form-control" id="" placeholder="Keyword">
+
+        </div>
+
+        <button type="submit" class="btn btn-success btn-lg mb-2">Search</button>
+
+   </form>
+
+        <br/>
+
+    {% if book %}
+
+    {% for x in book %}
+
+    <h3> <a href="/book-detail/{{x.id}}">{{x.book_name}}</a></h3>
+
+    <p class="lead">by {{x.author_name}}</p>
+
+      <p class="lead">${{x.price}}</p>
+
+     <hr>
+
+    {% endfor %}
+    {% endif %}
+
+</div>
+
+</div>
+
+</body>
+
+</html>
