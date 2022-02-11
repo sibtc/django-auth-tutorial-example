@@ -42,6 +42,9 @@ INSTALLED_APPS = [
 
     'mysite.core',
     'searchapp',
+
+    # full text search postgres
+    "django.contrib.postgres",
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
